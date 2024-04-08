@@ -1,4 +1,4 @@
-const Plat = ({ name, image, price }) => {
+const Dish = ({ name, image, price }) => {
     return (
     <div>
     <h3>{name}</h3>
@@ -7,4 +7,4 @@ const Plat = ({ name, image, price }) => {
     </div>
     );
     };
-    export default Plat;
+    export default Dish;
