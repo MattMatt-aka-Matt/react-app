@@ -2,6 +2,7 @@
 import Card from 'react-bootstrap/Card';
 import "../assets/styles/Dish.css"
 
+
 const Dish = ({ name, image, price}) => {
   return (
     <Card style={{ width: '18rem' }}>
@@ -11,6 +12,7 @@ const Dish = ({ name, image, price}) => {
         <Card.Text>
           <p>{price}€</p>
         </Card.Text>
+        
       </Card.Body>
     </Card>
   );

@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./pages/Home.jsx";
 import Layout from "./components/Layout.jsx";
 import { Route, Routes } from "react-router-dom";
+import DishDetails from "./pages/DishDetails.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/plat/:slug" element={<DishDetails />} />
         </Route>
       </Routes>
     </div>
