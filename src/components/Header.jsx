@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../assets/styles/Header.css";
+import logo from '../assets/images/logo.webp';
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
         <Container>
           <Navbar.Brand href="#home">
             <img 
-              src="https://cdn.pixabay.com/photo/2018/03/26/14/18/man-3262834_960_720.png"
+              src={logo}
               alt="un mexicain avec une guitard lol"
               className="d-inline-block align-top"
             />
