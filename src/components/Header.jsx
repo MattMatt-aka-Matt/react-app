@@ -1,25 +1,36 @@
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import "../assets/styles/Header.css";
 
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav';
 function Header() {
-    return (
-      <Container>
+  return (
+    <header>
       <Navbar expand="lg" className="bg-body-tertiary">
-          <Navbar.Brand href="#"><img src="https://cdn.pixabay.com/photo/2018/03/26/14/18/man-3262834_960_720.png" alt="un mexicain avec une guitard lol"/></Navbar.Brand>
-          <Nav>
-            <Nav.Link href="#accueil">Acuueil</Nav.Link>
-          </Nav>
+        <Container>
+          <Navbar.Brand href="#home">
+            <img 
+              src="https://cdn.pixabay.com/photo/2018/03/26/14/18/man-3262834_960_720.png"
+              alt="un mexicain avec une guitard lol"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            className="justify-content-end"
+          >
+            <Nav>
+              <Nav.Link href="#home">Accueil</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
-    </Container>
-    );
-  }
+      </header>
+  );
+}
 
-  export default Header;
-
-
-
-
+export default Header;
 
 // export default ContainerOutsideExample;
 
