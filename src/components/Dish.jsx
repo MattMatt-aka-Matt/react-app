@@ -1,10 +1,11 @@
 
 import Card from 'react-bootstrap/Card';
 import "../assets/styles/Dish.css"
-
+import { Link } from 'react-router-dom';
 
 const Dish = ({ name, image, price}) => {
   return (
+    <Link to={`/plat/${name}`}>
     <Card style={{ width: '18rem' }}>
       <Card.Img className="imgSize"variant="top" src={image} />
       <Card.Body>
@@ -15,6 +16,7 @@ const Dish = ({ name, image, price}) => {
         
       </Card.Body>
     </Card>
+    </Link>
   );
 };
 export default Dish;
