@@ -4,31 +4,40 @@ import Container from "react-bootstrap/Container";
 import Dish from "../components/Dish";
 
 function Home() {
+  const dishes = [
+    {
+      id: 1,
+      name: "Tacos à l’unité",
+      image:
+        "https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795_960_720.jpg",
+      price: "3",
+    },
+    {
+      id: 2,
+      name: "Enchiladas",
+      image:
+        "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_960_720.jpg",
+      price: "12",
+    },
+    {
+      id: 3,
+      name: "Mole poblano",
+      image:
+        "https://cdn.pixabay.com/photo/2021/02/04/03/57/mole-5980185_960_720.jpg",
+      price: "15",
+    },
+  ];
+  
   return (
     <>
       <Container>
         <Row>
-          <Col>
-            <Dish
-              name="Tacos à l’unité"
-              image="https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795_960_720.jpg"
-              price="3"
-            />
-          </Col>
-          <Col>
-            <Dish
-              name="Enchiladas"
-              image="https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_960_720.jpg"
-              price="12"
-            />
-          </Col>
-          <Col>
-            <Dish
-              name="Mole poblano"
-              image="https://cdn.pixabay.com/photo/2021/02/04/03/57/mole-5980185_960_720.jpg"
-              price="15"
-            />
-          </Col>
+          {dishes.map((dish) => (
+            // Utilisation de l'identifiant unique de chaque plat comme clé
+            <Col key={dish.id}>
+              <Dish name={dish.name} image={dish.image} price={dish.price} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </>
