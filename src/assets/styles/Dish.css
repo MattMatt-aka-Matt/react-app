@@ -3,3 +3,13 @@
     width: auto; 
     object-fit: cover;
 }
+.dishCard {
+    width: 18rem;
+    position: relative; /* Position relative pour le conteneur Card */
+  }
+  
+  .newBadge {
+    position: absolute;
+    top: 10px; /* Ajustez selon vos besoins */
+    right: 10px; /* Ajustez selon vos besoins */
+  }
