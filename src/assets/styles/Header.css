@@ -2,3 +2,6 @@ header img {
     height: 50px !important;
     width: 50px !important;
 }
+.nav-link:active {
+    text-decoration: underline;
+  }
