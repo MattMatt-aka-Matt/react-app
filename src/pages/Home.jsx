@@ -36,7 +36,7 @@ function Home() {
   // État pour gérer l'affichage des nouveautés uniquement
   const [showNewOnly, setShowNewOnly] = useState(false);
 
-  // Fonction pour basculer entre afficher toutes les nouveautés ou tous les plats
+  // Fonction pour basculer entre afficher les nouveautés ou tous les plats
   const handleShowNewOnly = () => {
     setShowNewOnly(!showNewOnly);
   };
