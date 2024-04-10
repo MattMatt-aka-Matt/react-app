@@ -11,13 +11,13 @@ function Header() {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
         <NavLink className="nav-link" to="/">
-          <Navbar.Brand to="/">
+          
             <img
               src={logo}
               alt="un mexicain avec une guitard lol"
               className="d-inline-block align-top"
             />
-          </Navbar.Brand>
+          
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
