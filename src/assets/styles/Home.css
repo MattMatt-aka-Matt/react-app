@@ -1,0 +1,11 @@
+.filterButton {
+    
+    width: 200px; /* Largeur fixe pour réduire la taille du bouton */
+    margin: 20px auto; /* Centrage du bouton en automatique sur les côtés */
+   
+  }
+  
+  .filterButton:hover {
+    background-color: #ffffff; /* Assombrit le bouton lors du survol */
+  }
+  
