@@ -4,6 +4,7 @@ import Layout from "./components/Layout.jsx";
 import { Route, Routes } from "react-router-dom";
 import DishDetails from "./pages/DishDetails.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/plat/:slug" element={<DishDetails />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </div>

@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../assets/styles/Header.css";
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo.webp';
 
 function Header() {
@@ -22,7 +23,8 @@ function Header() {
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link href="#home">Accueil</Nav.Link>
+              <NavLink className="nav-link" to="/">Accueil</NavLink>
+              <NavLink className="nav-link" to="/about" activeClassName="active">a propos</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
