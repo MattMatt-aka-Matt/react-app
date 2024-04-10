@@ -10,14 +10,12 @@ function Header() {
     <header>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-        <NavLink className="nav-link" to="/">
-          <Navbar.Brand to="/">
+          <NavLink className="navbar-brand" to="/">
             <img
               src={logo}
               alt="un mexicain avec une guitard lol"
               className="d-inline-block align-top"
             />
-          </Navbar.Brand>
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -28,10 +26,7 @@ function Header() {
               <NavLink className="nav-link" to="/">
                 Accueil
               </NavLink>
-              <NavLink
-                className="nav-link"
-                to="/about"
-              >
+              <NavLink className="nav-link" to="/about">
                 a propos
               </NavLink>
             </Nav>
