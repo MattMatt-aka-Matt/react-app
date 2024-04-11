@@ -2,12 +2,11 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Dish from "../components/Dish";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/styles/Home.css";
 import dishesData from "../datas/dishes.json";
 
 function Home() {
-  
   const [dishes, setDishes] = useState([]);
   const [showNewOnly, setShowNewOnly] = useState(false);
 
