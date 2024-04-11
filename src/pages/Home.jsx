@@ -7,12 +7,10 @@ import "../assets/styles/Home.css";
 import dishesData from "../datas/dishes.json";
 
 function Home() {
+  
   const [dishes, setDishes] = useState([]);
   const [showNewOnly, setShowNewOnly] = useState(false);
 
-  useEffect(() => {
-    setDishes(dishesData);
-  }, []);
   // Fonction pour basculer entre afficher les nouveautés ou tous les plats
   const handleShowNewOnly = () => {
     setShowNewOnly(!showNewOnly);
