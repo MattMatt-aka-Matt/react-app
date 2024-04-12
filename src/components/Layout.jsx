@@ -4,15 +4,16 @@ import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
 
-function Layout({ children }) {
-  return (
-    <>
-      <Header /> 
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
-  );
-}
-export default Layout;
+  const Layout = ({cart}) => {
+      return (
+          <>
+              <Header cart={cart}/>
+              <main>
+                  <Outlet/>
+              </main>
+              <Footer/>
+          </>
+      );
+  };
+
+  export default Layout;
