@@ -5,6 +5,7 @@ import Dish from "../components/Dish";
 import React, { useState, useEffect } from "react";
 import "../assets/styles/Home.css";
 import dishesData from "../datas/dishes.json";
+import {Helmet} from "react-helmet";
 
 function Home() {
   const [dishes, setDishes] = useState([]);
@@ -25,6 +26,9 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>Accueil | Mexican Food</title>
+      </Helmet>
       <Container>
         <button onClick={handleShowNewOnly} className="filterButton">
           {showNewOnly ? "Voir tous les plats" : "Nouveautés uniquement"}

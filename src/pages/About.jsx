@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 
 function About() {
   return (
     <>
+      <Helmet>
+        <title> A propos | Mexican Food</title>
+      </Helmet>
+
       <h1>A propos</h1>
       <br></br>
       <p>
