@@ -28,7 +28,7 @@ function DishDetails() {
             <Col>
               <h1>{dish.name}</h1>
               <p>{dish.description}</p>
-              <p>{dish.price}euros</p>
+              <p>{dish.price}€</p>
               <Button variant="primary" onClick={() => addToCart(dish)}>
                 Commander
               </Button>
