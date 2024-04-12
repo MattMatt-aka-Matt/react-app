@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import dishesDatas from "../datas/dishes.json";
+import { CartContext } from "../utils/context/CartContext";
 
-function DishDetails({ addToCart }) {
+
+
+function DishDetails() {
   const { slug } = useParams();
   const [dish, setDish] = useState(null);
 
@@ -11,7 +14,7 @@ function DishDetails({ addToCart }) {
     const currentDish = dishesDatas.find((dish) => dish.slug === slug);
     setDish(currentDish);
   }, [slug]);
-
+  const {addToCart} = useContext(CartContext);
   return (
     <Container>
       {dish ? (
@@ -24,7 +27,6 @@ function DishDetails({ addToCart }) {
             <p>{dish.description}</p>
             <p>{dish.price}€</p>
             <Button onClick={() => addToCart(dish)}>Ajouter au panier</Button>
-            <Button variant="primary">bouton</Button>
           </Col>
         </Row>
       ) : (
